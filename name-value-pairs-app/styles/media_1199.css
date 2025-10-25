@@ -1,0 +1,84 @@
+@media screen and (max-width: 1199px) {
+    .application-container {
+        margin-top: 0;
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    #pairs-list {
+        height: 90%;
+        width: 80%;
+    }
+
+    button {
+        height: 50px;
+        font-size: 20px;
+    }
+    #sortNameBtn, #sortValueBtn{
+        width: 178px;
+    }
+
+    #addBtn, #deleteBtn {
+        width: 178px;
+        font-size: 22px;
+    }
+
+    #deleteBtn {
+        margin-bottom: 12px;
+        margin-top: 20px;
+    }
+
+    .lower-container__buttons {
+        justify-content: space-between;
+        margin-top: 0;
+    }
+
+    .add-pair__wrapper{
+        width: 75%;
+    }
+    .upper-container input {
+        height: 50px;
+        font-size: 19px;
+        width: 80%;
+    }
+
+    .upper-container label, .lower-container label {
+        font-size: 16px;
+    }
+
+    #pairs-list option {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+    }
+
+    #pairs-list option:checked {
+        font-size: 25px;
+    }
+    .pairs-list__container{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+    .upper-container{
+        height: 10vh;
+    }
+    #addBtn{
+        margin-top: 22px;
+        align-self: auto;
+    }
+    .sort-buttons__container{
+        margin-top: 21px;
+    }
+    .lower-container{
+        height: 60svh;
+    }
+    #application{
+        display: flex;
+        height: 85vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

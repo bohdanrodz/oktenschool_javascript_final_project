@@ -1,0 +1,33 @@
+@media screen and (max-width: 480px) {
+    .upper-container {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        height: 24svh;
+    }
+
+    .add-pair__wrapper {
+        width: 100%;
+    }
+
+    #addBtn {
+        align-self: auto;
+        width: 40%;
+        margin-top: 0;
+        height: 60px;
+    }
+
+    #pairs-list {
+        height: 35svh;
+    }
+    .sort-buttons__container{
+        width: 60%;
+    }
+    #sortNameBtn, #sortValueBtn{
+        width: 45%;
+    }
+    #deleteBtn{
+        width: 35%;
+    }
+
+}

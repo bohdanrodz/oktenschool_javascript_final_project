@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Name:Value pairs</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/media_1199.css">
+    <link rel="stylesheet" href="styles/media_767.css">
+    <link rel="stylesheet" href="styles/media_479.css">
+    <link rel="stylesheet" href="styles/media_landscape.css">
+</head>
+<body>
+<div class="application-container">
+    <h1>Test</h1>
+    <form name="application" id="application">
+        <div class="upper-container">
+            <div class="add-pair__wrapper">
+                <label for="addPair">Name/Value Pair</label>
+                <input type="text" id="addPair" name="addPair" placeholder="Enter a name/value pair">
+            </div>
+            <button id="addBtn">Add</button>
+        </div>
+        <div class="lower-container">
+            <div class="pairs-list__container">
+                <label for="pairs-list">Name/Value Pair List</label>
+                <select name="pairs-list" id="pairs-list" multiple>
+                </select>
+            </div>
+            <div class="lower-container__buttons">
+                <div class="sort-buttons__container">
+                    <button id="sortNameBtn">Sort by Name</button>
+                    <button id="sortValueBtn">Sort by Value</button>
+                </div>
+                <button id="deleteBtn">Delete</button>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

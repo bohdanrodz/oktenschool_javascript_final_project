@@ -1,0 +1,66 @@
+@media (orientation: landscape) and (max-height: 500px){
+    h1 {
+        font-size: 16px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 767px){
+    .upper-container label, .lower-container label{
+        font-size: 15px;
+    }
+    .upper-container{
+        margin-top: 0;
+    }
+    #addBtn{
+        margin-top: 29px;
+    }
+    .pairs-list__container{
+        width: 65%;
+    }
+    .lower-container{
+        flex-direction: row;
+    }
+    .lower-container__buttons{
+        width: 30%;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-end;
+    }
+    .sort-buttons__container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 5px;
+        height: 55%;
+        margin-top: 22px;
+        width: 100%;
+    }
+    #sortNameBtn, #sortValueBtn{
+        min-width: 80%;
+        flex: 1;
+    }
+    #deleteBtn{
+        height: 60px;
+    }
+    button{
+        height: 40px;
+    }
+    .upper-container input{
+        height: 40px;
+        margin-top: 2px;
+    }
+    #addBtn{
+        height: 40px;
+        margin-top: 23px;
+    }
+    #pairs-list{
+        margin-top: 2px;
+    }
+    .upper-container{
+        height: 24svh;
+    }
+    .lower-container{
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,90 @@
+@media screen and (max-width: 767px) {
+    .application-container {
+        width: 100svw;
+        height: 100svh;
+        margin-top: 0;
+        border-radius: 0;
+        padding: 0 2.5%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .lower-container {
+        flex-direction: column;
+
+    }
+    .pairs-list__container{
+        width: 100%;
+    }
+    .pairs-list__container label{
+        text-align: center;
+    }
+    #pairs-list {
+        width: 100%;
+        margin-top: 5px;
+        height: 48svh;
+    }
+
+    .add-pair__wrapper {
+        width: 65%;
+    }
+
+    .upper-container input {
+        height: 60px;
+        font-size: 22px;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .upper-container label, .lower-container label {
+        font-size: 20px;
+
+    }
+
+    #addBtn {
+        height: 60px;
+        width: 30%;
+        font-size: 25px;
+        font-weight: bold;
+        border: 1px solid grey;
+        margin-top: 32px;
+    }
+
+    #pairs-list option:checked {
+        font-size: 24px;
+    }
+
+    #pairs-list option {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+    }
+
+    .lower-container__buttons {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sort-buttons__container {
+        flex-direction: row;
+        width: 65%;
+        justify-content: space-between;
+    }
+
+    #deleteBtn {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 60px;
+        font-size: 22px;
+        width: 120px;
+    }
+
+    button {
+        height: 60px;
+        font-size: 20px;
+    }
+}

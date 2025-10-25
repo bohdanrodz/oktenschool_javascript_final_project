@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0078d7;
+    display: flex;
+    justify-content: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.application-container {
+    width: 700px;
+    height: 70vh;
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 4vh 25px;
+    margin-top: 15vh;
+}
+
+button {
+    font-family: "Segoe UI", Arial, sans-serif;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    height: 35px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.upper-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.upper-container input {
+    display: block;
+    width: 450px;
+    height: 35px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#addBtn {
+    width: 85px;
+    background: #48ff00;
+    margin-top: 21px;
+}
+
+.add-pair__wrapper{
+    height: 15vh;
+}
+
+.lower-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower-container__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 21px;
+}
+
+.sort-buttons__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#sortNameBtn, #sortValueBtn {
+    width: 140px;
+    background: skyblue;
+}
+
+#deleteBtn {
+    width: 100px;
+    margin-top: 30px;
+    background: red;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    border: 1px solid grey;
+    align-self: flex-end;
+}
+
+.upper-container label, .lower-container label {
+    font-size: 14px;
+    color: grey;
+}
+
+#pairs-list {
+    width: 450px;
+    height: 35vh;
+    font-size: 16px;
+    padding: 0 2px;
+}
+
+#pairs-list option {
+    margin-top: 4px;
+    border-radius: 2px;
+}
+
+#pairs-list option:hover {
+    cursor: pointer;
+}
+
+#pairs-list option:checked {
+    background: red;
+    color: white;
+    font-size: 18px;
+    padding-left: 5px;
+}
