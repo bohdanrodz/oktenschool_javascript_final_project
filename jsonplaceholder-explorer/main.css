@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #7eadff;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+}
+
+#users-container {
+    display: flex;
+    padding: 0 5%;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.user-block {
+    height: 150px;
+    background: white;
+    width: 47.5%;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.user-details__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    background: lightgray;
+    text-decoration: none;
+    color: #000;
+    border-radius: 15px;
+    border: 1px solid grey;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    background: white;
+    margin: 3vh 5vw;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.user-posts__heading {
+    display: none;
+    margin-top: 20px;
+}
+
+ul {
+    margin-left: 15px;
+}
+
+
+#get-posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 45px;
+    background: lightgray;
+    text-decoration: none;
+    color: #000;
+    border-radius: 15px;
+    border: 1px solid grey;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin: 30px auto 0 auto;
+}
+
+.post-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post {
+    width: 18%;
+    margin-top: 15px;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+    background: #eeeeee;
+}
+
+#comments-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#comments-container h3 {
+    background: white;
+    border-radius: 20px 20px 0 0;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border-bottom: 1px solid grey;
+}
+
+.comment {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.comment:nth-child(1) {
+    border-top-left-radius: 0;
+}
+
+.post-details {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.comment-author {
+    font-size: 19px;
+}
+
+.comment-topic {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.comment-wrapper {
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+button {
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: 500;
+}
