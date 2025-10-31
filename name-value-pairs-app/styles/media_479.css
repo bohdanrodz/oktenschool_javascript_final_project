@@ -20,13 +20,16 @@
     #pairs-list {
         height: 35svh;
     }
-    .sort-buttons__container{
+
+    .sort-buttons__container {
         width: 60%;
     }
-    #sortNameBtn, #sortValueBtn{
+
+    #sortNameBtn, #sortValueBtn {
         width: 45%;
     }
-    #deleteBtn{
+
+    #deleteBtn {
         width: 35%;
     }
 

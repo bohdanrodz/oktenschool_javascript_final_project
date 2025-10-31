@@ -15,7 +15,8 @@
         height: 50px;
         font-size: 20px;
     }
-    #sortNameBtn, #sortValueBtn{
+
+    #sortNameBtn, #sortValueBtn {
         width: 178px;
     }
 
@@ -34,9 +35,10 @@
         margin-top: 0;
     }
 
-    .add-pair__wrapper{
+    .add-pair__wrapper {
         width: 75%;
     }
+
     .upper-container input {
         height: 50px;
         font-size: 19px;
@@ -57,25 +59,31 @@
     #pairs-list option:checked {
         font-size: 25px;
     }
-    .pairs-list__container{
+
+    .pairs-list__container {
         display: flex;
         flex-direction: column;
         width: 75%;
     }
-    .upper-container{
+
+    .upper-container {
         height: 10vh;
     }
-    #addBtn{
+
+    #addBtn {
         margin-top: 22px;
         align-self: auto;
     }
-    .sort-buttons__container{
+
+    .sort-buttons__container {
         margin-top: 21px;
     }
-    .lower-container{
+
+    .lower-container {
         height: 60svh;
     }
-    #application{
+
+    #application {
         display: flex;
         height: 85vh;
         flex-direction: column;

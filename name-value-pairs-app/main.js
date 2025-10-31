@@ -17,18 +17,16 @@ function saveArrayInLocalStorage() {
 }
 
 function deletePair(name) {
-    for (const pair of pairsArr) {
-        if (pair.key === name) {
-            pairsArr.splice(pairsArr.findIndex(pair => pair.key === name), 1);
-            break;
-        }
+    const i = pairsArr.findIndex(pair => pair.key === name);
+    if (i > -1) {
+        pairsArr.splice(i, 1);
+        saveArrayInLocalStorage();
     }
-    saveArrayInLocalStorage();
 }
 
 function sortBy(field) {
     pairsField.replaceChildren();
-    const sortedArr = pairsArr.sort((a, b) => a[field].localeCompare(b[field]));
+    const sortedArr = pairsArr.sort((a, b) => a[field].localeCompare(b[field], undefined, {sensitivity: 'base'}));
     for (const item of sortedArr) {
         const option = document.createElement('option');
         option.value = item.key;
@@ -45,7 +43,7 @@ function returnIfAlphaNumeric(userInput) {
     if (/^[a-zA-Z0-9]+$/.test(key) && /^[a-zA-Z0-9]+$/.test(value)) {
         return [key, value];
     } else if (/^[a-zA-Z0-9]+$/.test(key.replaceAll(/\s/g, '')) && /^[a-zA-Z0-9]+$/.test(value)) {
-        if (confirm('Spaces in key are not allowed. Convert to camelCase automatically?')) {
+        if (confirm('Spaces in key are not allowed. Convert to camelCase automatically?(the key will be changed)')) {
             const keyCamelCase = key
                 .split(/\s+/)
                 .map((word, index) => index === 0 ? word.toLowerCase() : word[0].toUpperCase() + word.slice(1))
@@ -60,9 +58,7 @@ function returnIfAlphaNumeric(userInput) {
 }
 
 
-
-const addButton = document.getElementById('addBtn');
-addButton.onclick = (e) => {
+form.onsubmit = (e) => {     // Add pair
     e.preventDefault();
     let inputValue = form.addPair.value;
     if (inputValue.includes('=') && inputValue.split('=').length === 2) {
@@ -81,8 +77,7 @@ addButton.onclick = (e) => {
         }
         if (addFlag) {
             pairsArr.push({
-                key: key,
-                value: value
+                key: key, value: value
             })
             saveArrayInLocalStorage();
             const optionToAdd = document.createElement('option');
@@ -99,7 +94,7 @@ addButton.onclick = (e) => {
 }
 
 
-pairsField.onmousedown = (e) => {
+pairsField.onmousedown = (e) => {  // multiple choice without CTRL
     e.preventDefault();
     const option = e.target;
     if (option.tagName.toLowerCase() === 'option') {

@@ -16,12 +16,15 @@
         flex-direction: column;
 
     }
-    .pairs-list__container{
+
+    .pairs-list__container {
         width: 100%;
     }
-    .pairs-list__container label{
+
+    .pairs-list__container label {
         text-align: center;
     }
+
     #pairs-list {
         width: 100%;
         margin-top: 5px;

@@ -1,32 +1,38 @@
-@media (orientation: landscape) and (max-height: 500px){
+@media (orientation: landscape) and (max-height: 500px) {
     h1 {
         font-size: 16px;
     }
 }
 
-@media (orientation: landscape) and (max-width: 767px){
-    .upper-container label, .lower-container label{
+@media (orientation: landscape) and (max-width: 767px) {
+    .upper-container label, .lower-container label {
         font-size: 15px;
     }
-    .upper-container{
+
+    .upper-container {
         margin-top: 0;
     }
-    #addBtn{
+
+    #addBtn {
         margin-top: 29px;
     }
-    .pairs-list__container{
+
+    .pairs-list__container {
         width: 65%;
     }
-    .lower-container{
+
+    .lower-container {
         flex-direction: row;
     }
-    .lower-container__buttons{
+
+    .lower-container__buttons {
         width: 30%;
         flex-direction: column;
         gap: 8px;
         align-items: flex-end;
     }
-    .sort-buttons__container{
+
+    .sort-buttons__container {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: stretch;
@@ -36,31 +42,39 @@
         margin-top: 22px;
         width: 100%;
     }
-    #sortNameBtn, #sortValueBtn{
+
+    #sortNameBtn, #sortValueBtn {
         min-width: 80%;
         flex: 1;
     }
-    #deleteBtn{
+
+    #deleteBtn {
         height: 60px;
     }
-    button{
+
+    button {
         height: 40px;
     }
-    .upper-container input{
+
+    .upper-container input {
         height: 40px;
         margin-top: 2px;
     }
-    #addBtn{
+
+    #addBtn {
         height: 40px;
         margin-top: 23px;
     }
-    #pairs-list{
+
+    #pairs-list {
         margin-top: 2px;
     }
-    .upper-container{
+
+    .upper-container {
         height: 24svh;
     }
-    .lower-container{
+
+    .lower-container {
         margin-top: 5px;
     }
 }
